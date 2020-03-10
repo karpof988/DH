@@ -1,0 +1,22 @@
+{
+  "name": "todolistado",
+  "version": "1.0.0",
+  "description": "ejercicio de dh",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karpof988/DH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karpof988/DH/issues"
+  },
+  "homepage": "https://github.com/karpof988/DH#readme",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
+}

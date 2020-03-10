@@ -1,0 +1,14 @@
+[
+    { 
+        "descripcion" : "Comprar ibuprofeno",
+        "estado" : "No cumplido"
+    },
+    { 
+        "descripcion" : "Comprar aceite",
+        "estado" : "Veremos"
+    },
+    { 
+        "descripcion" : "Estudiar JavaScript",
+        "estado" : "Cumplido"
+    }
+]
