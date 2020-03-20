@@ -9,7 +9,7 @@ let tareas = {
             descripcion: nuevaTarea,
             estado: 'pendiente'
         });
-        fs.writeFileSync(this.archivo, JSON.stringify(t, null, ' '));
+        fs.writeFileSync(this.archivo, JSON.stringify(t, null, ' ')); // null, ' ' hace que mantenga la identacion el json
         return 'La tarea a guardar es:' + nuevaTarea;
     },
     leerPorEstado: function(filtroEstado){
