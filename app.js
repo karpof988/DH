@@ -12,17 +12,39 @@ const chalk = require('chalk');
 // }
 
 const tareas = require('./leertarea.js');
+const archivoTareas = require('./leertarea.js');
 //console.log(tareas.leer());
 
 switch( accion ){
     case 'listar':
         const tareasArray = tareas.leer();
         console.log(chalk.yellow("\nTarea \t\t\t\tEstado"));
-        for (let i = 0; i < tareasArray.length; i++) {
-            const element = tareasArray[i];
-            console.log((i+1) + ' ' + element.descripcion + '\t\t' + element.estado);
-        }
+        tareasArray.forEach((valor, indice) => {
+            console.log((indice+1) + ' ' + valor.descripcion + '\t\t' + valor.estado);
+        });
         console.log('\nEl usuario quiere listar');
+    break;
+    case 'agregar': 
+        const tareaRecibida = process.argv[3];
+        if(!tareaRecibida){
+            console.log("no existe la tarea"); 
+            break;
+        } 
+        const resultadoGuardar = tareas.guardar(process.argv[3]);
+        console.log(resultadoGuardar);
+    break;
+    case 'filtrar':
+        const filtroRecibido = process.argv[3];
+        if(!filtroRecibido){
+            console.log("ingrese un filtro"); 
+            break;
+        } 
+        const resultadoFiltrar = tareas.leerPorEstado(process.argv[3]);
+        console.log(chalk.yellow("\nTarea \t\t\t\tEstado"));
+        resultadoFiltrar.forEach((valor, indice) => {
+            console.log((indice+1) + ' ' + valor.descripcion + '\t\t' + valor.estado);
+        });
+        console.log('');
     break;
     case undefined:
         console.log('Accion desconocida.');

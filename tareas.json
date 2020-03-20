@@ -1,14 +1,26 @@
 [
-    { 
-        "descripcion" : "Comprar ibuprofeno",
-        "estado" : "No cumplido"
-    },
-    { 
-        "descripcion" : "Comprar aceite",
-        "estado" : "Veremos"
-    },
-    { 
-        "descripcion" : "Estudiar JavaScript",
-        "estado" : "Cumplido"
-    }
+ {
+  "descripcion": "Comprar ibuprofeno",
+  "estado": "No cumplido"
+ },
+ {
+  "descripcion": "Comprar aceite",
+  "estado": "Veremos"
+ },
+ {
+  "descripcion": "Estudiar JavaScript",
+  "estado": "Cumplido"
+ },
+ {
+  "descripcion": "comprar sillon",
+  "estado": "pendiente"
+ },
+ {
+  "descripcion": "limpiar",
+  "estado": "pendiente"
+ },
+ {
+  "descripcion": "jugar",
+  "estado": "pendiente"
+ }
 ]
